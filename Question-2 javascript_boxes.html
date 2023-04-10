@@ -1,0 +1,75 @@
+<!-- Question-2 What is Javascript Boxes? -->
+<!-- Ans.
+
+    There are three Types of dialog  Boxes Supporetd in javascript.
+    such as, alert, confirmation and prompt box.
+
+ ------------------Meaning Of dialog Boxes-------------
+ ---------dialog  Box can be used to perform specific task
+        ------Such as raise an alert,
+            ----To get Confirmation of an event or an output
+               ---And to get input from the user.
+-->
+<!-- ############## All Examples About These three boxes...... ############## -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Boxes</title>
+    <!-- Script code for alert dialog box  with show() fn-->
+    <script type="text/javascript">   
+        function show() {   
+            alert("It is an Alert dialog box");   
+        }   
+    </script>   
+    <!-- End of the alert dialog box -->
+
+    <!-- Script code for confirmation dialog box  with show() fn -->
+    <script type="text/javascript">   
+        function show() {   
+            var con = confirm ("It is a Confirm dialog box");   
+            if(con == true) {   
+                document.write ("User Want to continue");   
+            }    
+            else {   
+                document.write ("User does not want to continue");   
+            }   
+        }   
+    </script>  
+    <!-- End of Confirmation box -->
+
+    <!-- Script code for Prompt dialog box -->
+    <script type="text/javascript">   
+        function show() {   
+            var value = prompt("Enter your Name : ", "Enter your name");   
+            document.write("Your Name is : " + value);   
+        }   
+    </script>   
+    <!-- End of prompt box -->
+</head>
+<body>
+    <center>   
+        <h1>Hello World :) :)</h1>   
+        <h2 style="color:red">Welcome to MyJavascriptPage with alert box</h2>   
+        <p>Click the following button </p>   
+        <input type="button" value="Click Me" onclick="show();" />   
+    </center>   
+    <hr>
+    <center>   
+        <h1>Hello World :) :)</h1>   
+        <h2 style="color:red">Welcome to MyJavascriptPage with confirmation box</h2>   
+        <p>Click the following button </p>   
+        <input type="button" value="Click Me" onclick="show();" />   
+    </center>
+    <hr>
+    <center>   
+        <h1>Hello World :) :)</h1>   
+        <h2 style="color:red">Welcome to MyJavascriptPage with Prompt box</h2>   
+        <p>Click the following button </p>   
+        <input type="button" value="Click Me" onclick="show();" />   
+    </center>   
+</body>   
+</body>
+</html>
