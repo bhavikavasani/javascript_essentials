@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Expression Testing</title>
+</head>
+<body>
+    <h1>What Will be The Output for following Expression?</h1>
+        
+        <button onclick="graterthan1()">5 > 4</button>
+        <p><b>output :True  </b> because 5 is  greater than 4</p>
+        <br><br>
+        
+        <button onclick="graterthan2()">"apple" > "pineapple"</button>
+        <p><b>output :False  </b> because a is not greater than p, because a comes before p, so it is less than.</p>
+        <br><br>
+
+        <button onclick="graterthan3()">"2" > "12"</button>
+        <p><b>output : false </b> because  "2" will be greater than "12", because (alphabetically) 1 is less than 2.</p><br><br>
+
+        <button onclick="equal()">undefined == null</button>
+        <script>
+        // Strict mode is used for to find the errors in the whole program.
+        // one type of error handling on the code at runtime. 
+        // It also helps you write cleaner code and catch errors and bugs in your code.
+
+
+        // All comparison operators return a boolean value:
+        "use strict";
+        function graterthan1() {
+        alert( 5 > 4 );  // output: true 
+        }
+
+        // string comparison
+        function graterthan2() {
+        alert("apple" > "pineapple" );  // output : False because a is not greater than p, because a comes before p, so it is less than.
+        }
+
+        function graterthan3() {
+        alert("2" > "12");  // output : false because  "2" will be greater than "12", because (alphabetically) 1 is less than 2.
+        }
+        
+        function equal() {
+        alert(undefined == null);  // output : false because  "2" will be greater than "12", because (alphabetically) 1 is less than 2.
+        }
+        </script>
+</body>
+</html>
